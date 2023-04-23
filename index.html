@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="matrix">
+    <header class="matrix">
       <img class="matrix-img" src="./eisenhower-matrix.jpg">
       <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
-    </div>
-    <div class="container">
-      <p id="add-item-block">
+    </header>
+    <main class="container">
+      <div id="add-item-block">
         <label class="label-add-item" for="new-task">Add Item</label>
         <div class="task-row-wrapper">
           <input class="input input-text input-add-item" id="new-task" type="text">
           <button class="button">Add</button>
         </div>
-      </p>
+      </div>
       <h3 class="title">Todo</h3>
       <ul class="list" id="incomplete-tasks">
         <li class="list-item">
@@ -30,14 +30,18 @@
           <label class="label-task">Pay Bills</label>
           <input class="input input-text input-task" type="text">
           <button class="button button-edit">Edit</button>
-          <button class="button button-delete"><img class="img-remove" src="./remove.svg"></button>
+          <button class="button button-delete">
+            <img class="img-remove" src="./remove.svg">
+          </button>
         </li>
         <li class="list-item edit-mode">
           <input class="input input-checkbox" type="checkbox">
           <label class="label-task">Go Shopping</label>
           <input class="input input-text input-task" type="text" value="Go Shopping">
           <button class="button button-edit">Save</button>
-          <button class="button button-delete"><img class="img-remove" src="./remove.svg"></button>
+          <button class="button button-delete">
+            <img class="img-remove" src="./remove.svg">
+          </button>
         </li>
       </ul>
       <h3 class="title">Completed</h3>
@@ -47,10 +51,12 @@
           <label class="label-task">See the Doctor</label>
           <input class="input input-text input-task" type="text">
           <button class="button button-edit">Edit</button>
-          <button class="button button-delete"><img class="img-remove" src="./remove.svg"></button>
+          <button class="button button-delete">
+            <img class="img-remove" src="./remove.svg">
+          </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
